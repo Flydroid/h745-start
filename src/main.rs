@@ -64,10 +64,10 @@ Content-Type: text/html
 <!DOCTYPE html>
 <html>
 <head>
-    <title>STM32H745 Dual Core Demo App</title>
+    <title>STM32H747 Dual Core Demo App</title>
 </head>
 <body>
-    <h1>STM32H745 Dual Core Demo App</h1>";
+    <h1>STM32H747 Dual Core Demo App</h1>";
 
 #[cfg(core = "0")]
 const WEBPAGE_LOWER: &str =

@@ -9,15 +9,15 @@
             "request": "launch",
             "type": "cortex-debug",
             "cwd": "${workspaceRoot}",
-            "executable": "${workspaceFolder}/target/thumbv7em-none-eabihf/debug/h745-dual-core",
+            "executable": "${workspaceFolder}/target/thumbv7em-none-eabihf/debug/h747-dual-core",
             "servertype": "openocd",
-            "configFiles": ["st_nucleo_h745zi.cfg"],
+            "configFiles": ["st_nucleo_h747xi.cfg"],
             "preLaunchTask": "Build binary",
             "preLaunchCommands": [
                 "monitor init",
                 "monitor reset init",
                 "monitor halt",
-                "monitor flash write_image erase ./target/thumbv7em-none-eabihf/debug/h745-dual-core.bin 0x08000000"
+                "monitor flash write_image erase ./target/thumbv7em-none-eabihf/debug/h747-dual-core.bin 0x08000000"
             ],
             "postLaunchCommands": ["continue"] // This is to prevent the debugger from stopping before the program is executed        
         }

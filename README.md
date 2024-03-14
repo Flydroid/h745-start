@@ -1,4 +1,4 @@
-# STM32H745 Dual-Core Project
+# STM32H747 Dual-Core Project
 
 ## Build Project
 
@@ -77,7 +77,7 @@ cargo make
 Use `cargo flash` utility
 
 ```bash
-cargo flash --chip STM32H745ZITx
+cargo flash --chip STM32H747XIHx
 ```
 
 ### Single core - dual core project
@@ -86,10 +86,10 @@ Use `cargo flash` utility
 
 ```bash
 # Core 0
-cargo flash --elf target/thumbv7em-none-eabihf/release/h745-dual-core-0 --chip STM32H745ZITx
+cargo flash --elf target/thumbv7em-none-eabihf/release/h747-dual-core-0 --chip STM32H747XIHx
 
 # Core 1
-cargo flash --elf target/thumbv7em-none-eabihf/release/h745-dual-core-1 --chip STM32H745ZITx
+cargo flash --elf target/thumbv7em-none-eabihf/release/h747-dual-core-1 --chip STM32H747XIHx
 ```
 
 ### Dual core (merged HEX image)
@@ -117,4 +117,4 @@ sudo apt install -y gdb-multiarch openocd
 sudo ln -s /usr/bin/gdb-multiarch /usr/bin/arm-none-eabi-gdb
 ```
 
-Config file source: https://github.com/openocd-org/openocd/blob/master/tcl/board/st_nucleo_h745zi.cfg
+Config file source: https://github.com/openocd-org/openocd/blob/master/tcl/board/st_nucleo_h747xi.cfg
