@@ -12,7 +12,7 @@ MERGE_HEX = "${ARTIFACT_DIR}/merge.hex"
 
 [tasks.artifact-dir]
 command = "mkdir"
-args = ["-p", "${ARTIFACT_DIR}"]
+args = ["${ARTIFACT_DIR}"]
 
 [tasks.elf0]
 command = "cp"

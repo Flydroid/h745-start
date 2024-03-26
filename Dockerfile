@@ -1,4 +1,4 @@
-FROM rust:1.72
+FROM rust:1.74
 
 # Programs installed with apt
 RUN apt-get update && apt-get install -y \
